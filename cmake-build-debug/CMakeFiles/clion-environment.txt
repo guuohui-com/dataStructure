@@ -1,0 +1,4 @@
+ToolSet: w64 6.0 (local)@F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64
+Options: 
+
+Options:
