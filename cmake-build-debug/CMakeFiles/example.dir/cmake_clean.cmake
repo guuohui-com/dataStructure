@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/example.dir/HuffmanTree.cpp.obj"
   "CMakeFiles/example.dir/LinkedListSec.cpp.obj"
-  "CMakeFiles/example.dir/chinBinTree.cpp.obj"
+  "CMakeFiles/example.dir/ThreadBinTree.cpp.obj"
+  "CMakeFiles/example.dir/chainBinTree.cpp.obj"
   "CMakeFiles/example.dir/circleLinkedList.cpp.obj"
   "CMakeFiles/example.dir/fishc.cpp.obj"
+  "CMakeFiles/example.dir/leetCode.cpp.obj"
   "CMakeFiles/example.dir/linkedList.cpp.obj"
   "CMakeFiles/example.dir/pingpong.cpp.obj"
   "CMakeFiles/example.dir/recall.cpp.obj"

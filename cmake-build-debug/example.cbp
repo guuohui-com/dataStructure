@@ -80,16 +80,25 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/dataStructure/project/example/HuffmanTree.cpp">
+			<Option target="example"/>
+		</Unit>
 		<Unit filename="F:/dataStructure/project/example/LinkedListSec.cpp">
 			<Option target="example"/>
 		</Unit>
-		<Unit filename="F:/dataStructure/project/example/chinBinTree.cpp">
+		<Unit filename="F:/dataStructure/project/example/ThreadBinTree.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="F:/dataStructure/project/example/chainBinTree.cpp">
 			<Option target="example"/>
 		</Unit>
 		<Unit filename="F:/dataStructure/project/example/circleLinkedList.cpp">
 			<Option target="example"/>
 		</Unit>
 		<Unit filename="F:/dataStructure/project/example/fishc.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="F:/dataStructure/project/example/leetCode.cpp">
 			<Option target="example"/>
 		</Unit>
 		<Unit filename="F:/dataStructure/project/example/linkedList.cpp">

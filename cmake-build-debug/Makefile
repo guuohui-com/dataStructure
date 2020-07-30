@@ -122,6 +122,33 @@ example/fast:
 	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/build
 .PHONY : example/fast
 
+HuffmanTree.obj: HuffmanTree.cpp.obj
+
+.PHONY : HuffmanTree.obj
+
+# target to build an object file
+HuffmanTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/HuffmanTree.cpp.obj
+.PHONY : HuffmanTree.cpp.obj
+
+HuffmanTree.i: HuffmanTree.cpp.i
+
+.PHONY : HuffmanTree.i
+
+# target to preprocess a source file
+HuffmanTree.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/HuffmanTree.cpp.i
+.PHONY : HuffmanTree.cpp.i
+
+HuffmanTree.s: HuffmanTree.cpp.s
+
+.PHONY : HuffmanTree.s
+
+# target to generate assembly for a file
+HuffmanTree.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/HuffmanTree.cpp.s
+.PHONY : HuffmanTree.cpp.s
+
 LinkedListSec.obj: LinkedListSec.cpp.obj
 
 .PHONY : LinkedListSec.obj
@@ -149,32 +176,59 @@ LinkedListSec.cpp.s:
 	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/LinkedListSec.cpp.s
 .PHONY : LinkedListSec.cpp.s
 
-chinBinTree.obj: chinBinTree.cpp.obj
+ThreadBinTree.obj: ThreadBinTree.cpp.obj
 
-.PHONY : chinBinTree.obj
+.PHONY : ThreadBinTree.obj
 
 # target to build an object file
-chinBinTree.cpp.obj:
-	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chinBinTree.cpp.obj
-.PHONY : chinBinTree.cpp.obj
+ThreadBinTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/ThreadBinTree.cpp.obj
+.PHONY : ThreadBinTree.cpp.obj
 
-chinBinTree.i: chinBinTree.cpp.i
+ThreadBinTree.i: ThreadBinTree.cpp.i
 
-.PHONY : chinBinTree.i
+.PHONY : ThreadBinTree.i
 
 # target to preprocess a source file
-chinBinTree.cpp.i:
-	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chinBinTree.cpp.i
-.PHONY : chinBinTree.cpp.i
+ThreadBinTree.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/ThreadBinTree.cpp.i
+.PHONY : ThreadBinTree.cpp.i
 
-chinBinTree.s: chinBinTree.cpp.s
+ThreadBinTree.s: ThreadBinTree.cpp.s
 
-.PHONY : chinBinTree.s
+.PHONY : ThreadBinTree.s
 
 # target to generate assembly for a file
-chinBinTree.cpp.s:
-	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chinBinTree.cpp.s
-.PHONY : chinBinTree.cpp.s
+ThreadBinTree.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/ThreadBinTree.cpp.s
+.PHONY : ThreadBinTree.cpp.s
+
+chainBinTree.obj: chainBinTree.cpp.obj
+
+.PHONY : chainBinTree.obj
+
+# target to build an object file
+chainBinTree.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chainBinTree.cpp.obj
+.PHONY : chainBinTree.cpp.obj
+
+chainBinTree.i: chainBinTree.cpp.i
+
+.PHONY : chainBinTree.i
+
+# target to preprocess a source file
+chainBinTree.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chainBinTree.cpp.i
+.PHONY : chainBinTree.cpp.i
+
+chainBinTree.s: chainBinTree.cpp.s
+
+.PHONY : chainBinTree.s
+
+# target to generate assembly for a file
+chainBinTree.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/chainBinTree.cpp.s
+.PHONY : chainBinTree.cpp.s
 
 circleLinkedList.obj: circleLinkedList.cpp.obj
 
@@ -229,6 +283,33 @@ fishc.s: fishc.cpp.s
 fishc.cpp.s:
 	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/fishc.cpp.s
 .PHONY : fishc.cpp.s
+
+leetCode.obj: leetCode.cpp.obj
+
+.PHONY : leetCode.obj
+
+# target to build an object file
+leetCode.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/leetCode.cpp.obj
+.PHONY : leetCode.cpp.obj
+
+leetCode.i: leetCode.cpp.i
+
+.PHONY : leetCode.i
+
+# target to preprocess a source file
+leetCode.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/leetCode.cpp.i
+.PHONY : leetCode.cpp.i
+
+leetCode.s: leetCode.cpp.s
+
+.PHONY : leetCode.s
+
+# target to generate assembly for a file
+leetCode.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/leetCode.cpp.s
+.PHONY : leetCode.cpp.s
 
 linkedList.obj: linkedList.cpp.obj
 
@@ -320,18 +401,27 @@ help:
 	@echo ... example
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... HuffmanTree.obj
+	@echo ... HuffmanTree.i
+	@echo ... HuffmanTree.s
 	@echo ... LinkedListSec.obj
 	@echo ... LinkedListSec.i
 	@echo ... LinkedListSec.s
-	@echo ... chinBinTree.obj
-	@echo ... chinBinTree.i
-	@echo ... chinBinTree.s
+	@echo ... ThreadBinTree.obj
+	@echo ... ThreadBinTree.i
+	@echo ... ThreadBinTree.s
+	@echo ... chainBinTree.obj
+	@echo ... chainBinTree.i
+	@echo ... chainBinTree.s
 	@echo ... circleLinkedList.obj
 	@echo ... circleLinkedList.i
 	@echo ... circleLinkedList.s
 	@echo ... fishc.obj
 	@echo ... fishc.i
 	@echo ... fishc.s
+	@echo ... leetCode.obj
+	@echo ... leetCode.i
+	@echo ... leetCode.s
 	@echo ... linkedList.obj
 	@echo ... linkedList.i
 	@echo ... linkedList.s

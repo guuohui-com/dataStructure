@@ -134,18 +134,57 @@ CMakeFiles/example.dir/fishc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/fishc.cpp.s"
 	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\fishc.cpp -o CMakeFiles\example.dir\fishc.cpp.s
 
-CMakeFiles/example.dir/chinBinTree.cpp.obj: CMakeFiles/example.dir/flags.make
-CMakeFiles/example.dir/chinBinTree.cpp.obj: ../chinBinTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/example.dir/chinBinTree.cpp.obj"
-	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\example.dir\chinBinTree.cpp.obj -c F:\dataStructure\project\example\chinBinTree.cpp
+CMakeFiles/example.dir/chainBinTree.cpp.obj: CMakeFiles/example.dir/flags.make
+CMakeFiles/example.dir/chainBinTree.cpp.obj: ../chainBinTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/example.dir/chainBinTree.cpp.obj"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\example.dir\chainBinTree.cpp.obj -c F:\dataStructure\project\example\chainBinTree.cpp
 
-CMakeFiles/example.dir/chinBinTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/chinBinTree.cpp.i"
-	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\dataStructure\project\example\chinBinTree.cpp > CMakeFiles\example.dir\chinBinTree.cpp.i
+CMakeFiles/example.dir/chainBinTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/chainBinTree.cpp.i"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\dataStructure\project\example\chainBinTree.cpp > CMakeFiles\example.dir\chainBinTree.cpp.i
 
-CMakeFiles/example.dir/chinBinTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/chinBinTree.cpp.s"
-	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\chinBinTree.cpp -o CMakeFiles\example.dir\chinBinTree.cpp.s
+CMakeFiles/example.dir/chainBinTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/chainBinTree.cpp.s"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\chainBinTree.cpp -o CMakeFiles\example.dir\chainBinTree.cpp.s
+
+CMakeFiles/example.dir/leetCode.cpp.obj: CMakeFiles/example.dir/flags.make
+CMakeFiles/example.dir/leetCode.cpp.obj: ../leetCode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/example.dir/leetCode.cpp.obj"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\example.dir\leetCode.cpp.obj -c F:\dataStructure\project\example\leetCode.cpp
+
+CMakeFiles/example.dir/leetCode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/leetCode.cpp.i"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\dataStructure\project\example\leetCode.cpp > CMakeFiles\example.dir\leetCode.cpp.i
+
+CMakeFiles/example.dir/leetCode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/leetCode.cpp.s"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\leetCode.cpp -o CMakeFiles\example.dir\leetCode.cpp.s
+
+CMakeFiles/example.dir/ThreadBinTree.cpp.obj: CMakeFiles/example.dir/flags.make
+CMakeFiles/example.dir/ThreadBinTree.cpp.obj: ../ThreadBinTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/example.dir/ThreadBinTree.cpp.obj"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\example.dir\ThreadBinTree.cpp.obj -c F:\dataStructure\project\example\ThreadBinTree.cpp
+
+CMakeFiles/example.dir/ThreadBinTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/ThreadBinTree.cpp.i"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\dataStructure\project\example\ThreadBinTree.cpp > CMakeFiles\example.dir\ThreadBinTree.cpp.i
+
+CMakeFiles/example.dir/ThreadBinTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/ThreadBinTree.cpp.s"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\ThreadBinTree.cpp -o CMakeFiles\example.dir\ThreadBinTree.cpp.s
+
+CMakeFiles/example.dir/HuffmanTree.cpp.obj: CMakeFiles/example.dir/flags.make
+CMakeFiles/example.dir/HuffmanTree.cpp.obj: ../HuffmanTree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/example.dir/HuffmanTree.cpp.obj"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\example.dir\HuffmanTree.cpp.obj -c F:\dataStructure\project\example\HuffmanTree.cpp
+
+CMakeFiles/example.dir/HuffmanTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/HuffmanTree.cpp.i"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E F:\dataStructure\project\example\HuffmanTree.cpp > CMakeFiles\example.dir\HuffmanTree.cpp.i
+
+CMakeFiles/example.dir/HuffmanTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/HuffmanTree.cpp.s"
+	F:\JetBrains\Toolbox\apps\x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S F:\dataStructure\project\example\HuffmanTree.cpp -o CMakeFiles\example.dir\HuffmanTree.cpp.s
 
 # Object files for target example
 example_OBJECTS = \
@@ -155,7 +194,10 @@ example_OBJECTS = \
 "CMakeFiles/example.dir/pingpong.cpp.obj" \
 "CMakeFiles/example.dir/recall.cpp.obj" \
 "CMakeFiles/example.dir/fishc.cpp.obj" \
-"CMakeFiles/example.dir/chinBinTree.cpp.obj"
+"CMakeFiles/example.dir/chainBinTree.cpp.obj" \
+"CMakeFiles/example.dir/leetCode.cpp.obj" \
+"CMakeFiles/example.dir/ThreadBinTree.cpp.obj" \
+"CMakeFiles/example.dir/HuffmanTree.cpp.obj"
 
 # External object files for target example
 example_EXTERNAL_OBJECTS =
@@ -166,12 +208,15 @@ example.exe: CMakeFiles/example.dir/circleLinkedList.cpp.obj
 example.exe: CMakeFiles/example.dir/pingpong.cpp.obj
 example.exe: CMakeFiles/example.dir/recall.cpp.obj
 example.exe: CMakeFiles/example.dir/fishc.cpp.obj
-example.exe: CMakeFiles/example.dir/chinBinTree.cpp.obj
+example.exe: CMakeFiles/example.dir/chainBinTree.cpp.obj
+example.exe: CMakeFiles/example.dir/leetCode.cpp.obj
+example.exe: CMakeFiles/example.dir/ThreadBinTree.cpp.obj
+example.exe: CMakeFiles/example.dir/HuffmanTree.cpp.obj
 example.exe: CMakeFiles/example.dir/build.make
 example.exe: CMakeFiles/example.dir/linklibs.rsp
 example.exe: CMakeFiles/example.dir/objects1.rsp
 example.exe: CMakeFiles/example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable example.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=F:\dataStructure\project\example\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable example.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\example.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
