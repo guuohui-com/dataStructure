@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="F:/dataStructure/project/example/AdiacencyListGraph.cpp">
+			<Option target="example"/>
+		</Unit>
+		<Unit filename="F:/dataStructure/project/example/Graph.cpp">
+			<Option target="example"/>
+		</Unit>
 		<Unit filename="F:/dataStructure/project/example/HuffmanTree.cpp">
 			<Option target="example"/>
 		</Unit>

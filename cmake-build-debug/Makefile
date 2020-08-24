@@ -122,6 +122,60 @@ example/fast:
 	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/build
 .PHONY : example/fast
 
+AdiacencyListGraph.obj: AdiacencyListGraph.cpp.obj
+
+.PHONY : AdiacencyListGraph.obj
+
+# target to build an object file
+AdiacencyListGraph.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/AdiacencyListGraph.cpp.obj
+.PHONY : AdiacencyListGraph.cpp.obj
+
+AdiacencyListGraph.i: AdiacencyListGraph.cpp.i
+
+.PHONY : AdiacencyListGraph.i
+
+# target to preprocess a source file
+AdiacencyListGraph.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/AdiacencyListGraph.cpp.i
+.PHONY : AdiacencyListGraph.cpp.i
+
+AdiacencyListGraph.s: AdiacencyListGraph.cpp.s
+
+.PHONY : AdiacencyListGraph.s
+
+# target to generate assembly for a file
+AdiacencyListGraph.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/AdiacencyListGraph.cpp.s
+.PHONY : AdiacencyListGraph.cpp.s
+
+Graph.obj: Graph.cpp.obj
+
+.PHONY : Graph.obj
+
+# target to build an object file
+Graph.cpp.obj:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/Graph.cpp.obj
+.PHONY : Graph.cpp.obj
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles\example.dir\build.make CMakeFiles/example.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 HuffmanTree.obj: HuffmanTree.cpp.obj
 
 .PHONY : HuffmanTree.obj
@@ -401,6 +455,12 @@ help:
 	@echo ... example
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... AdiacencyListGraph.obj
+	@echo ... AdiacencyListGraph.i
+	@echo ... AdiacencyListGraph.s
+	@echo ... Graph.obj
+	@echo ... Graph.i
+	@echo ... Graph.s
 	@echo ... HuffmanTree.obj
 	@echo ... HuffmanTree.i
 	@echo ... HuffmanTree.s

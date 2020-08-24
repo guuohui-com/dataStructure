@@ -3,4 +3,4 @@ project(example)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(example linkedList.cpp LinkedListSec.cpp circleLinkedList.cpp pingpong.cpp recall.cpp fishc.cpp chainBinTree.cpp leetCode.cpp ThreadBinTree.cpp HuffmanTree.cpp)
+add_executable(example linkedList.cpp LinkedListSec.cpp circleLinkedList.cpp pingpong.cpp recall.cpp fishc.cpp chainBinTree.cpp leetCode.cpp ThreadBinTree.cpp HuffmanTree.cpp Graph.cpp AdiacencyListGraph.cpp)
