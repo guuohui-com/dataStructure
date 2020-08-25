@@ -3,6 +3,7 @@
 //图的邻接表表示（无向图）
 //
 #include <iostream>
+#include <queue>
 using namespace std;
 
 #define Maxsize 50 //顶点个数最大值
@@ -206,14 +207,16 @@ void DFSTraverse(AdjGraph *adjGraph){
         if (visited[v] == 0){
             DFS(adjGraph,v);
         }
-        cout<<endl;
     }
+    cout<<endl;
 }
 
 /*
+ * DFS();写法1
+ * 思想：以data为媒介，找到访问点的位置
  * 从顶点V触发，进行深度优先搜索
  * */
-void DFS(AdjGraph *adjGraph, int v){
+/*void DFS(AdjGraph *adjGraph, int v){
     int w = 0;
 
     //设置标志位1，表示其已经被访问过
@@ -227,6 +230,29 @@ void DFS(AdjGraph *adjGraph, int v){
         if(visited[w] == 0){
             DFS(adjGraph,w);
         }
+    }
+
+}*/
+
+
+/*
+ * DFS();写法2
+ * 思想：以V的邻接点纵深搜索
+ * 从顶点V触发，进行深度优先搜索
+ * */
+void DFS(AdjGraph *adjGraph, int v){
+    ArcNode *node ;
+    visited[v] = 1;
+
+    cout<< adjGraph->adjList[v].data<<endl;
+
+    node = adjGraph->adjList[v].firstNode;
+
+    while (node != NULL){
+        if (visited[node->vnode] == 0){
+            DFS(adjGraph, node->vnode);
+        }
+        node = node->nextarc;
     }
 
 }
@@ -283,6 +309,46 @@ int NextAdjVertex(AdjGraph *adjGraph,char v, char w){
     return -1;
 }
 
+/*
+ *广度优先 非递归 遍历
+ * */
+void BFSTraverse(AdjGraph *adjGraph){
+    //存点的位置的队列
+    queue<int> queue;
+    //初始化Visited
+    for (int i = 0; i < adjGraph->vexnum; ++i) {
+        visited [i] = 0;
+    }
+
+    ArcNode *node;
+    int v = 0;
+    int w = 0;
+    //第一个元素入队
+    queue.push(v);
+    //队列不空
+    while (!queue.empty()){
+        //将其边节点入队
+        w = queue.front();
+        node = adjGraph->adjList[w].firstNode;
+        while (node != NULL){
+            /*
+             * 注意入队的条件，否则无条件入队造成死循环
+             * */
+            if(visited[node->vnode] == 0){
+                queue.push(node->vnode);
+            }
+            node = node->nextarc;
+        }
+        //队首元素出队
+        if (visited[w] == 0){
+            visited[w] = 1;
+            cout<<adjGraph->adjList[w].data<<" ";
+        }
+        queue.pop();
+    }
+    cout<<endl;
+}
+
 int main(){
     cout<<"创建有向图"<<endl;
     AdjGraph  graph;
@@ -291,10 +357,11 @@ int main(){
     cout<<"展示有向图"<<endl;
     DisPlayGraph(graph);
 
-    cout<<"============="<<FirstAdjVertex(&graph,'c')<<endl;
-
     cout<<"深度优先搜索"<<endl;
     DFSTraverse(&graph);
+
+    cout<<"广度优先搜索"<<endl;
+    BFSTraverse(&graph);
 
     cout<<"销毁有向图"<<endl;
     DestoryGraph(&graph);
