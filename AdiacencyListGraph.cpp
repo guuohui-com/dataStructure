@@ -88,7 +88,6 @@ void CreateGraph(AdjGraph *adjGraph){
     while (z < adjGraph->arcnum){
 
         cout<<"输入弧尾和弧头"<<endl;
-        cout<<"z = "<<z<< "adjGraph->arcnum = "<<adjGraph->arcnum;
         cin>>from>>to;
 
         i = LocateVertex(*adjGraph,from);
@@ -112,7 +111,6 @@ void CreateGraph(AdjGraph *adjGraph){
         node->nextarc = adjGraph->adjList[i].firstNode;
         //将新的节点赋值给头结点的指针域，实现头插法
         adjGraph->adjList[i].firstNode = node;
-
         /*
          * 无向图所以，再次以i为弧尾，j为弧头插入边表
          * 若为有向图，则可以无此操作
@@ -178,7 +176,7 @@ void DisPlayGraph(AdjGraph adjGraph){
 
     //输出图的所有边
     cout<<"输出图的所有边"<<endl;
-    for (i = 0; i < adjGraph.arcnum; i++) {
+    for (i = 0; i < adjGraph.vexnum; i++) {
         node = adjGraph.adjList[i].firstNode;
         while(node != NULL){
             cout<<adjGraph.adjList[i].data<<"-"<<adjGraph.adjList[node->vnode].data<<" ";
@@ -216,7 +214,6 @@ void DFSTraverse(AdjGraph *adjGraph){
  * 从顶点V触发，进行深度优先搜索
  * */
 void DFS(AdjGraph *adjGraph, int v){
-
     int w = 0;
 
     //设置标志位1，表示其已经被访问过
@@ -224,9 +221,10 @@ void DFS(AdjGraph *adjGraph, int v){
     //访问第v个节点
     cout<<adjGraph->adjList[v].data<<" ";
 
-    for (w = FirstAdjVertex(adjGraph,adjGraph->adjList[v].data); w > 0 ;
+    for (w = FirstAdjVertex(adjGraph,adjGraph->adjList[v].data); w >= 0 ;
     w = NextAdjVertex(adjGraph,adjGraph->adjList[v].data,adjGraph->adjList[w].data) ) {
-        if(!visited[w]){
+
+        if(visited[w] == 0){
             DFS(adjGraph,w);
         }
     }
@@ -237,15 +235,20 @@ void DFS(AdjGraph *adjGraph, int v){
  * 找v的第一个邻接点的位置,弱不存在，则返回-1
  * */
 int FirstAdjVertex(AdjGraph *adjGraph,char v){
+
    ArcNode *p;
    int v1;
 
    //v1 是v 在图中所在位置的序号
    v1 = LocateVertex(*adjGraph,v);
 
+   if(v1 < 0){
+       return  -1;
+   }
+
    p = adjGraph->adjList[v1].firstNode;
 
-   if (p){
+   if (p != NULL){
        return p ->vnode;
    } else{
        return -1;
@@ -256,13 +259,26 @@ int FirstAdjVertex(AdjGraph *adjGraph,char v){
  * 找v的相对于w的下一个邻接点的位置
  * */
 int NextAdjVertex(AdjGraph *adjGraph,char v, char w){
+    //找到头结点
     int head = LocateVertex(*adjGraph,v);
+    int v2 = LocateVertex(*adjGraph,w);
+
+    //指向头结点的第一个邻接顶点
     ArcNode *arcNode = adjGraph->adjList[head].firstNode;
+    ArcNode *p ;
+
     while (arcNode != NULL){
-        if (w == LocateVertex(*adjGraph,arcNode->vnode)){
-            return LocateVertex(*adjGraph,arcNode->vnode);
+        if (v2 != arcNode->vnode){
+            arcNode = arcNode ->nextarc;
+        } else{
+            break;
         }
-        arcNode = arcNode ->nextarc;
+    }
+    p = arcNode;
+    if(p==NULL || p ->nextarc == NULL ){
+        return -1;
+    }else{
+        return p->nextarc->vnode;
     }
     return -1;
 }
@@ -274,6 +290,8 @@ int main(){
 
     cout<<"展示有向图"<<endl;
     DisPlayGraph(graph);
+
+    cout<<"============="<<FirstAdjVertex(&graph,'c')<<endl;
 
     cout<<"深度优先搜索"<<endl;
     DFSTraverse(&graph);
